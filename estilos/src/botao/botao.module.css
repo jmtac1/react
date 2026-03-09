@@ -1,0 +1,12 @@
+/*estilo modulos*/
+
+.botao {
+  background-color: seagreen;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
