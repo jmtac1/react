@@ -1,0 +1,13 @@
+body {
+  font-size: 2em;
+}
+h1 {
+  background-color: rgb(61, 190, 61);
+  border: 3px solid black;
+  text-align: center;
+  border-radius: 5px;
+}
+li {
+  text-align: center;
+  list-style: none;
+}
