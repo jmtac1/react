@@ -1,8 +1,5 @@
-function Lista() {
-    const frutas = [{id: 1, nome: 'limão', calorias: 68},
-                    {id: 2, nome: 'caju', calorias: 70},
-                    {id: 3, nome: 'laranja', calorias: 130},
-                    {id: 4, nome: 'acerola', calorias: 45}];
+function Lista({items, categoria}) {
+    
     
     // ordenando uma lista de objetos:
     // frutas.sort((a, b) => a.nome.localeCompare(b.nome)); // ordem alfabetica
@@ -13,12 +10,18 @@ function Lista() {
     // filtrando uma lista de objetos:
     // const frutasCaloricas = frutas.filter(fruta => fruta.calorias > 100);
 
-    const listaItems = frutas.map(
-        fruta => <li key={fruta.id}>{fruta.nome}: <strong>{fruta.calorias}</strong> calorias</li>
+    const lista = items;
+
+    const listaItems = lista.map(
+        item => <li key={item.id}>{item.nome}: <strong>{item.calorias}</strong> calorias</li>
     );
 
     return (
-    <ol>{listaItems}</ol>
+        <>
+            <h1>{categoria}</h1>
+            <ol>{listaItems}</ol>
+        </>
+    
     );
 }
 
