@@ -6,10 +6,12 @@
 // dados dinâmicos em sua aplicação, como contadores, entradas de formulários ou qualquer valor que precise ser preservado entre 
 // re-renderizações. 
 
-import Componente from "./Componente";
+import Contador from "./Contador";
 
 function App() {
-
+  return (
+    <Contador />
+  );
 }
 
 export default App;
