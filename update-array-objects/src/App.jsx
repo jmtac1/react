@@ -17,7 +17,8 @@ function App() {
   }
 
   function removerCarro(index) {
-    carros.filter((_, i) => i !== index);
+    setCarros(prevCarros => prevCarros.filter((_, i) => i !== index));
+    
   }
 
   function atualizarAno(e) {
