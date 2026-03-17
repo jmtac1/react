@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ListaJogos() {
-    const [jogos, setJogos] = useState(['doom', 'fifa', 'tf2']);
+    const [jogos, setJogos] = useState([]);
     const [novoJogo, setNovoJogo] = useState('');
 
     function atualizarInput(evento) {
@@ -16,15 +16,26 @@ function ListaJogos() {
     }
 
     function delJogo(index) {
-
+        const jogosAtualizados = jogos.filter((_, i) => i !== index);
+        setJogos(jogosAtualizados);
     }
 
     function moverJogoCima(index) {
-
+        if (index > 0) {
+            const jogosAtualizados = [...jogos];
+            [jogosAtualizados[index], jogosAtualizados[index - 1]] = 
+            [jogosAtualizados[index - 1], jogosAtualizados[index]];
+            setJogos(jogosAtualizados);
+        }
     }
 
     function moverJogoBaixo(index) {
-
+        if (index < jogos.length - 1) {
+            const jogosAtualizados = [...jogos];
+            [jogosAtualizados[index], jogosAtualizados[index + 1]] = 
+            [jogosAtualizados[index + 1], jogosAtualizados[index]];
+            setJogos(jogosAtualizados);
+        }
     }
 
 
