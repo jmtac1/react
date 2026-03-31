@@ -1,0 +1,20 @@
+body {
+  background-image: url(assets/pirate-ship-painted-art-cvinlsm92msxk198.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-relogio {
+  font-size: 5em;
+  padding: 10px;
+  color: white;
+  font-family: monospace;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
