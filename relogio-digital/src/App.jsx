@@ -1,4 +1,4 @@
-import Relogio from "./Relogio"
+import Relogio from "./Relogio";
 
 function App() {
 
@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

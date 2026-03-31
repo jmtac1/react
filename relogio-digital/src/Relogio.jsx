@@ -19,7 +19,7 @@ function Relogio() {
         const minutos = tempo.getMinutes();
         const segundos = tempo.getSeconds();
 
-        return `${padZero(horas)}:${padZero(minutos)}:${padZero(segundos)}`
+        return `${padZero(horas)}:${padZero(minutos)}:${padZero(segundos)}`;
     }
 
     function padZero(numero) {
@@ -35,4 +35,4 @@ function Relogio() {
     );
 }
 
-export default Relogio
+export default Relogio;
