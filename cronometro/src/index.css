@@ -1,0 +1,62 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.cronometro {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid grey;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.tempo {
+  font-size: 5em;
+  font-weight: bold;
+}
+#comecar {
+  font-size: 2em;
+  border: none;
+  color: white;
+  background-color: rgb(0, 195, 0);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+#parar {
+  font-size: 2em;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+#resetar {
+  font-size: 2em;
+  border: none;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+#comecar:hover {
+  background-color: rgb(0, 114, 0);
+}
+#parar:hover {
+  background-color: rgb(146, 0, 0);
+}
+#resetar:hover {
+  background-color: rgb(0, 0, 155);
+}
